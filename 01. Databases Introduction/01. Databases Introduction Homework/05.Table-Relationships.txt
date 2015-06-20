@@ -1,0 +1,38 @@
+There are several types of database relationships.
+
+- One to One Relationships 
+Consider the following scenario: http://i.imgur.com/K4DwM0m.png 
+Here, if we consider each person has a unique address, then we can consider the relationship as one to one, because ONE person has only ONE address, that is unique.
+This technique (for addresses) however is not the best, because we could have easily put the addresses in the table with users (denormalize it) to improve performance.
+Like this: http://i.imgur.com/hEhE8CF.png
+ 
+ 
+ 
+- One to Many and Many to One Relationships
+
+This is the most commonly used type of relationship. Consider a restaurant, with the following:
+One customer can make many orders (first he orders something to drink, then something to eat, etc., these are separate orders).
+Orders can contain many items (meals, drinks, desserts).
+Items can have descriptions in many languages.
+
+
+
+- Many to Many Relationships
+
+Many to Many Relationships
+In some cases, you may need multiple instances on both sides of the relationship. 
+For example, each order can contain multiple items. And each item can also be in multiple orders.
+
+In one order there could be simultaneously french fries, water, ice cream and stew but at the same time MANY other people may have ordered water, hence water is in many orders.
+
+
+
+- Self Referencing Relationships
+
+his is used when a table needs to have a relationship with itself.
+For example, let's say you have a referral program.
+Customers can refer other customers to your shopping website. The table may look like this:
+http://i.imgur.com/o3liz9H.png
+
+Customers 102 and 103 were referred by the customer 101.
+This actually can also be similar to "one to many" relationship since one customer can refer multiple customers.

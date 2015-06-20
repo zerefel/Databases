@@ -1,0 +1,13 @@
+The model I am going to write about is the Object-relational Database (ORD).
+
+The object-relational model is designed to provide developers the ability to integrate databases with their data types and methods.
+Essentially, it is a relational model that allows user to integrate features available in the Object-oriented world.
+
+The primary function of the object-relational model is to provide more power, greater flexibility and improved performance.
+It also allows for some very neat options like:
+	- Extensibility - It allows to easily define new patterns or data types in order to improve and expand the database.
+	- Complex Types - That's right. You have the ability to store and use complex data types or even combine one or more of the existing data types.
+	- Inheritance - Just like in the classical object-oriented programming, users can define object or types that procure from the properties of other objects.
+	
+It is a relatively new concept in the databases world. Techniques like ORM (Object-relational mapping) are built to allow for easy access to databases using this model
+from any object-oriented programming language (Java, C#, etc.). 

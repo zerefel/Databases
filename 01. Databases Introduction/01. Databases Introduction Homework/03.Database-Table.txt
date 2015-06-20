@@ -1,0 +1,7 @@
+In a relational database, a table (sometimes called a file) organizes the information about a single entity into rows and columns. 
+For example, a database for a business would typically contain a table for customer information, which would store customers' account numbers, addresses, phone numbers, and so on as a series of columns. 
+Each single piece of data (such as the account number) is a field in the table.
+A column consists of all the entries in a single field, such as the telephone numbers of all the customers. 
+Fields, in turn, are organized as records, which are complete sets of information (such as the set of information about a particular customer), each of which comprises a row.
+
+Here's an example representing that basic concept: http://i.imgur.com/lSiEcdt.png

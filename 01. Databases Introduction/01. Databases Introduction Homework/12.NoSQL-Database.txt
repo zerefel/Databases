@@ -1,0 +1,30 @@
+What are NoSQL Databases?
+
+	Next Generation Databases mostly addressing some of the points: being non-relational, distributed, open-source and horizontally scalable.
+	NoSQL encompasses a wide variety of different database technologies that were developed in response to a rise in the volume of data stored about
+	users, objects and products, the frequency in which this data is accessed, and performance and processing needs.
+	Relational databases, on the other hand, were not designed to cope with the scale and agility challenges that face modern applications, nor were they built to 
+	take advantage of the cheap storage and processing power available today.
+	
+There are multiple types of NoSQL Databases
+	 - Document databases 
+		pair each key with a complex data structure known as a document. Documents can contain many different key-value pairs, or key-array pairs, or even nested documents.
+	- Graph stores 
+		are used to store information about networks, such as social connections. Graph stores include Neo4J and HyperGraphDB.
+	- Key-value stores 
+		are the simplest NoSQL databases. Every single item in the database is stored as an attribute name (or "key"), together with its value. 
+		Examples of key-value stores are Riak and Voldemort. Some key-value stores, such as Redis, allow each value to have a type, such as "integer", which adds functionality.
+	- Wide-column stores 
+		such as Cassandra and HBase are optimized for queries over large datasets, and store columns of data together, instead of rows.
+		
+		
+		
+What benefits do NoSQL Databases bring?
+	- Large volumes of structured, semi-structured, and unstructured data
+	- Agile sprints, quick iteration, and frequent code pushes
+	- Object-oriented programming that is easy to use and flexible
+	- Efficient, scale-out architecture instead of expensive, monolithic architecture
+	
+	
+	
+A good comparison table between SQL and NoSQL can be found here: https://www.mongodb.com/nosql-explained

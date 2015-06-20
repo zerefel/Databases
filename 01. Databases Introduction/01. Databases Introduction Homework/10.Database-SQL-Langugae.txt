@@ -1,0 +1,17 @@
+Originally based upon relational algebra and tuple relational calculus, SQL consists of a data definition language and a data manipulation language. 
+The scope of SQL includes data insert, query, update and delete, schema creation and modification, and data access control.
+Although SQL is often described as, and to a great extent is, a declarative language (4GL), it also includes procedural elements.
+
+A declarative language is NOT a programming language and must be differentiated. Basically, that means that you declare what you want in a query and it is then executed against
+a database.
+
+A simple SQL query that retrieves users from a database is provided below.
+
+SELECT * FROM Users
+
+This query selects everything (*) from the table Users and returns it to the requester.
+
+SELECT FirstName, LastName, HireDate, City FROM Users
+WHERE City = 'Sofia'
+
+This query gets the first name, last name, hire date and city for users who life in Sofia from a table Users.

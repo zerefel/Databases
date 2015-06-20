@@ -1,0 +1,25 @@
+What are SQL transactions?
+
+	A transaction is a unit of work that is performed against a database. 
+	Transactions are units or sequences of work accomplished in a logical order, whether in a manual fashion by a user or automatically by some sort of a database program.
+	A transaction is the propagation of one or more changes to the database.
+	For example, if you are creating a record or updating a record or deleting a record from the table, then you are performing transaction on the table. 
+	It is important to control transactions to ensure data integrity and to handle database errors.
+	Practically, you will club many SQL queries into a group and you will execute all of them together as a part of a transaction.
+
+
+What is an ACID SQL Transaction?
+
+	In computer science, ACID (Atomicity, Consistency, Isolation, Durability) is a set of properties that guarantee that database transactions are processed reliably. 
+	In the context of databases, a single logical operation on the data is called a transaction. 
+	For example, a transfer of funds from one bank account to another, even involving multiple changes such as debiting one account and crediting another, is a single transaction.
+	
+	
+Transaction log
+
+	Every SQL Server database has a transaction log that records all transactions and the database modifications made by each transaction. 
+	The transaction log must be truncated on a regular basis to keep it from filling up. 
+	However, some factors can delay log truncation, so monitoring log size is important. Some operations can be minimally logged to reduce their impact on transaction log size.
+	he transaction log is the most important component of a SQL Server database when it comes to the disaster recovery – however, it must be uncorrupted. 
+	After each database modification – transaction occurrence, a log record is written to the transaction log. 
+	All the changes are written sequentially.

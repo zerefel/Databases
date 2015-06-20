@@ -1,0 +1,42 @@
+There's a very good explanation of how indexing work here: http://stackoverflow.com/questions/1108/how-does-database-indexing-work
+
+What is an index?
+
+	Well, an index is a data structure (most commonly a B-Tree) that stores the values for a specific column in a table. 
+	An index is created on a column of a table. 
+	So, the key points to remember are that an index consists of column values from one table, and that those values are stored in a data structure.
+	The index is a data structure – remember that.
+	
+	
+What is a B-Tree?
+
+	http://assets.20bits.com/20080513/b-tree.png
+	The shortest explanation I can provide is that a B-Tree is a Data Structure that resembles a Tree (lol). In a B-Tree nodes are separated in accordance to their values.
+	In the picture we can observe that all values that are smaller than the root node (13) stay on the left of the root, and all values that are greater stay on the right.
+	This rule stands true for all nodes of the Tree. This makes searching for a value in the tree really fast. It's much more complex than that. There are searching 
+	algorithms like BFS and DFS and many more things that optimize the process.
+	
+	
+Pros of indexing
+
+	Because an index is basically a data structure that is used to store column values, looking up those values becomes much faster. 
+	And, if an index is using the most commonly used data structure type – a B-tree – then the data structure is also sorted.
+	Having the column values be sorted can be a major performance enhancement.
+	
+	
+	
+Clustered indexing	
+
+	Clustering alters the data block into a certain distinct order to match the index, resulting in the row data being stored in order. 
+	Therefore, only one clustered index can be created on a given database table. 
+	Clustered indices can greatly increase overall speed of retrieval, but usually only where the data is accessed sequentially in the same or reverse 
+	order of the clustered index, or when a range of items is selected.
+	
+	
+Columnstore and Rowstore
+	- Columnstore
+		A columnstore is data that is logically organized as a table with rows and columns, and physically stored in a column-wise data format.
+	- Rowstore
+		A rowstore is data that is logically organized as a table with rows and columns, and then physically stored in a row-wise data format.
+		This has been the traditional way to store relational table data.
+		In SQL Server, rowstore is the underlying data storage format for a heap, a clustered index, and an in-memory table.
