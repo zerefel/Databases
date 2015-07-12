@@ -1,0 +1,5 @@
+DELETE FROM Users
+WHERE UserId = (SELECT TOP 1 UserId FROM Users)
+
+DELETE FROM Groups
+WHERE GroupId = (SELECT TOP 1 GroupId FROM Groups)

@@ -1,0 +1,5 @@
+T-SQL is Microsoft's version of SQL. It expands the the basic SQL standard and includes procedural
+programming, local variables, string and date processing, maths and other. It changes the DELETE 
+and UPDATE statements. 
+It is central to MSSQL Server. All application that wish to communicate to the Microsoft SQL Server
+must use T-SQL, regardless of the interface they use.

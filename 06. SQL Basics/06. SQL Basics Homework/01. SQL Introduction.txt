@@ -1,0 +1,8 @@
+DDL stands for Data Definition Language. It is used to create the scaffolding (skeleton)
+of the database, its structure.
+
+DML stands for Data Manipulation Language. It is used to create, retrieve, delete, insert and update 
+data in our database.
+
+SQL stands for Structured Query Language. It is used to manage data inside a relational database 
+management system. 

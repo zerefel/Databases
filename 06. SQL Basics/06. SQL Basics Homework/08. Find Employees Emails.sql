@@ -1,0 +1,1 @@
+SELECT LOWER(FirstName + '.' + LastName + '@softuni.bg') AS [Full Email Addresses] FROM Employees
